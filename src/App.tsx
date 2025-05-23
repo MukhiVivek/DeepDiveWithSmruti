@@ -1,6 +1,6 @@
 import './App.css'
 import Achievements from './components/Achievements'
-import Hero from './components/Herosection'
+import Hero from './components/Hero/Herosection'
 import LifeStoryTimeline from './components/LifeStory'
 
 function App() {

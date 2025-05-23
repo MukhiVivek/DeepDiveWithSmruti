@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import HeartIcon from "../Icon/Hearticon";
+import Watericon from "../Icon/Watericon";
+import RightArrow from "../Icon/RightArrow";
 
 const achievements = [
   {
@@ -48,17 +51,53 @@ export const Bubbles = () => {
 const Achievements = () => {
   return (
     <section className="relative bg-gradient-to-b from-sky-600 to-blue-700 text-white py-16 px-4 md:px-12 overflow-hidden">
-      <Bubbles />
+      
 
-      {/* Scuba Diver Image */}
+      
+
+      <div className="text-center mb-12 relative z-10">
+        <h2 className="text-3xl md:text-4xl font-bold">How can I help you?</h2>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-8 relative z-10">
+          <motion.div
+            className="bg-white/10w-full md:w-xl  mb:h-60 backdrop-blur-md p-6 rounded-xl border border-white/20 shadow-md hover:scale-105 transition-transform duration-300"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6}}
+            viewport={{ once: true }}
+          >
+            <div className="w-14  mb-3  h-14 flex-shrink-0 flex items-center justify-center rounded-full bg-white/10"> <HeartIcon  /> </div>
+            <h3 className="text-3xl font-semibold mb-3 ml-2">Be Brave Again</h3>
+            <p className="text-xl text-gray-300 mb-2 ml-2">Reconnect with your body, clear mental fog, and feel like yourself again.</p>
+            <p className="text-xl text-gray-100 ml-2">5-day ocean reset</p>
+            <p className="text-2xl text-gray-300 ml-2 mt-4 flex items-center ">Learn More <b><RightArrow /></b> </p>
+          </motion.div>
+
+          <motion.div
+            className="bg-white/10w-full md:w-xl  mb:h-60 backdrop-blur-md p-6 rounded-xl border border-white/20 shadow-md hover:scale-105 transition-transform duration-300"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6}}
+            viewport={{ once: true }}
+          >
+            <div className="w-14  mb-3  h-14 flex-shrink-0 flex items-center justify-center rounded-full bg-white/10"> <Watericon  /> </div>
+            <h3 className="text-3xl font-semibold mb-3 ml-2">Be friends with water</h3>
+            <p className="text-xl text-gray-300 mb-2 ml-2">Relax and feel safe in water — even if it's scared you before.</p>
+            <p className="text-xl text-gray-300 ml-2">Weekend experience</p>
+            <p className="text-2xl text-gray-100 ml-2 mt-4 flex items-center ">Learn More <b><RightArrow /></b> </p>
+          </motion.div>
+      </div>
+
+{/* Scuba Diver Image */}
       <motion.img
         src="/images/freediver2.png"
         alt="Scuba Diver"
-        className="absolute bottom-0 right-4 w-32 md:w-88 opacity-80 z-10"
+        className="absolute bottom-0 right-0 md:right-4 w-52 md:w-88 opacity-80 z-10"
         animate={{
-          y: [0, -20, 0],
+          y: [0, -10, 0],
           rotate: [0, 10, 0],
-          x: [0, 50, 0],
+          x: [0, 10, 0],
           }}
         transition={{
           duration: 10,
@@ -70,7 +109,7 @@ const Achievements = () => {
       <motion.img
         src="/images/starfish.png"
         alt="Scuba Diver"
-        className="absolute bottom-0 left-4 w-32 md:w-48 opacity-80 z-10"
+        className="absolute bottom-0 left-4 w-32 md:w-48 opacity-60 z-10"
         animate={{
           y: [0, -20, 0],
           rotate: [0, 10, 0],
@@ -82,28 +121,9 @@ const Achievements = () => {
           repeat: Infinity,
         }}
       />
-
-      <div className="text-center mb-12 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold">Achievements</h2>
-        <p className="text-gray-300 mt-2">Moments that shaped her journey</p>
-      </div>
-
-      <div className="grid md:grid-cols-2 gap-8 relative z-10">
-        {achievements.map((item, index) => (
-          <motion.div
-            key={index}
-            className="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 shadow-md hover:scale-105 transition-transform duration-300"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.2 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-xl font-semibold mb-1">{item.title}</h3>
-            <p className="text-sm text-gray-300 mb-2">{item.year}</p>
-            <p className="text-gray-100">{item.description}</p>
-          </motion.div>
-        ))}
-      </div>
+      
+      <Bubbles />
+      
     </section>
   );
 };
