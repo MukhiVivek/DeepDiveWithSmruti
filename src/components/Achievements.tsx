@@ -3,24 +3,6 @@ import HeartIcon from "../Icon/Hearticon";
 import Watericon from "../Icon/Watericon";
 import RightArrow from "../Icon/RightArrow";
 
-const achievements = [
-  {
-    title: "Certified Free Diver",
-    year: "2021",
-    description: "Completed AIDA Level 3 with excellence and deep breath hold record.",
-  },
-  {
-    title: "Ocean Cleanup Campaign",
-    year: "2022",
-    description: "Led a local ocean cleanup dive and educated over 100 people.",
-  },
-  {
-    title: "Underwater Photography Award",
-    year: "2023",
-    description: "Won 1st place in national underwater photography challenge.",
-  },
-];
-
 export const Bubbles = () => {
 
   return (
