@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import HeartIcon from "../Icon/Hearticon";
-import Watericon from "../Icon/Watericon";
-import RightArrow from "../Icon/RightArrow";
+import HeartIcon from "../../Icon/Hearticon";
+import Watericon from "../../Icon/Watericon";
+import RightArrow from "../../Icon/RightArrow";
 
 export const Bubbles = () => {
 
@@ -30,7 +30,7 @@ export const Bubbles = () => {
   );
 };
 
-const Achievements = () => {
+const Project = () => {
   return (
     <section className="relative bg-gradient-to-b from-sky-600 to-blue-700 text-white py-16 px-4 md:px-12 overflow-hidden">
       
@@ -38,7 +38,7 @@ const Achievements = () => {
       
 
       <div className="text-center mb-12 relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold">How can I help you?</h2>
+        <h2 className="text-3xl md:text-4xl font-bold">My Projects</h2>
       </div>
 
       <div className="grid md:grid-cols-2 gap-8 relative z-10">
@@ -110,4 +110,4 @@ const Achievements = () => {
   );
 };
 
-export default Achievements;
+export default Project;

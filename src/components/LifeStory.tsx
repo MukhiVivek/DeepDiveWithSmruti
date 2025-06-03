@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Bubbles } from "./Achievements";
+import { Bubbles } from "./Project/Project";
 
 const lifeStoryEvents = [
   {

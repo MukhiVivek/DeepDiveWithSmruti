@@ -69,24 +69,26 @@ const HeroSection: React.FC = () => {
                 >
                     <div className="lg:col-span-3 flex flex-col justify-center">
                         <motion.div variants={itemVariants}>
-                            <p className="text-primary-600 text-2xl dark:text-primary-400 font-mono mb-4">
-                                <b>Hello, I'm Smruti Mirani,</b>
+                            <p className="text-primary-600 text-yellow-300 text-2xl dark:text-primary-400 font-mono mb-4">
+                                <b>Hello, I'm Mukhi Vivek,</b>
                             </p>
                         </motion.div>
 
                         <motion.h1
                             variants={itemVariants}
-                            className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-dark-900 dark:text-white"
+                            className="text-4xl md:text-6xl lg:text-5xl font-bold tracking-tight text-dark-900 dark:text-white"
                         >
-                            <span className="block">freediving</span>
-                            <span className="block mt-2 mx-10">instructor<span className="text-primary-600 dark:text-primary-500">.</span></span>
+                            <span className="block text-yellow-400 ">Web 3 & AI Developer</span>
+                            {/* <span className="block ml-10 text-yellow-500">and</span>
+                            <span className="block ml-15 text-yellow-500">AI</span> */}
+                            {/* <span className="block mt-2 mx-10 text-yellow-600">Developer<span className="text-primary-600 dark:text-primary-500"></span></span> */}
                         </motion.h1>
 
                         <motion.p
                             variants={itemVariants}
-                            className="mt-6 text-xl text-gray-600 dark:text-gray-300 max-w-2xl"
+                            className="mt-6 text-xl text-yellow-500 max-w-2xl"   
                         >
-                            An IIT engineer turned freediving instructor and athlete on a mission to help people feel bold, alive, and safe—sometimes underwater.
+                            <p>Fascinated by smart contracts and machine learning, I’m on a journey to become a world-class developer. I'm looking for a Web3 and AI internship where I can learn, build, and grow.</p>
                         </motion.p>
 
                     </div>
@@ -120,7 +122,7 @@ const HeroSection: React.FC = () => {
                                 <div className="w-4/5 h-5/6 relative">
 
                                     <div className="w-full h-full rounded-full bg-gradient-to-br from-primary-600 to-secondary-600 flex items-center justify-center text-white text-4xl font-bold overflow-hidden">
-                                        <span><img src="/images/SmrutiPhoto.png" alt="Profile" /></span>
+                                        <span><img src="/images/Vivekimg.png" alt="Profile" /></span>
                                     </div>
                                 </div>
                             </motion.div>
